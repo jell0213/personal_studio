@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="jason_icon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/df8dc471c9.js" crossorigin="anonymous"></script>
+    <title>personal_studio</title>
+</head>
+<body>
+    <div class="container row">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light position-fixed col-12">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn" style="height: 50px;" type="button" data-bs-toggle="dropdown" 
+                            aria-expanded="false" id="dropdown_bars"
+                            onclick="document.getElementById('left_dropdown').style.transform='translateX(100%)';
+                                    document.getElementById('black_layout').style.display='block'">
+                                <p class="fa fa-bars fa-2x"></p>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" action="/formprocess.php">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </div>
+        </nav>
+    </div>
+    <div>
+    <div id="left_dropdown" class="position-fixed">        
+        <ul class="list-group" style="height: 50px" 
+            onclick="document.getElementById('black_layout').style.display='none';
+                     document.getElementById('left_dropdown').style.transform='translateX(-100%)'            
+            ">
+            <li class="list-group-item p-0 m-0" style="height: 50px; width:60px">
+                <nav class="navbar p-0 m-0">
+                    <div class="nav-item">
+                        <button class="btn" style="height: 50px;" type="button" data-bs-toggle="dropdown" 
+                        aria-expanded="false" id="dropdown_bars"
+                        onclick="document.getElementById('left_dropdown').style.transform='translateX(200px)';
+                                 document.getElementById('black_layout').style.display='block'">
+                            <p class="fa fa-bars fa-2x"></p>
+                        </button>
+                    </div>                    
+                </nav>
+            </li>
+        </ul>
+        <ul class="list-group">
+            <li class="list-group-item row">
+                <a class="nav-link col-3" href="https://www.youtube.com/">
+                    <i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
+                </a>                    
+                <a class="nav-link col-9" href="https://www.youtube.com/">
+                    <h3>youtube</h3>
+                </a> 
+            </li>
+            <li class="list-group-item row">
+                <a class="nav-link col-3" href="https://www.facebook.com/">
+                    <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                </a>
+                <a class="nav-link col-9" href="https://www.facebook.com/">
+                    <h3>facebook</h3>
+                </a> 
+            </li>
+            <li class="list-group-item row">
+                <a class="nav-link col-3" href="https://github.com/">
+                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+                <a class="nav-link col-9" href="https://github.com/">
+                    <h3>github</h3>
+                </a> 
+            </li>
+            <li class="list-group-item row">
+                <a class="nav-link col-3" href="https://www.google.com/">
+                    <i class="fa fa-chrome fa-2x" aria-hidden="true"></i>
+                </a>
+                <a class="nav-link col-9" href="https://www.google.com/">
+                    <h3>google</h3>
+                </a> 
+            </li>
+            <li class="list-group-item row">
+                <a class="nav-link col-3" href="https://www.pinterest.com/">
+                    <i class="fa fa-pinterest fa-2x" aria-hidden="true"></i>
+                </a>
+                <a class="nav-link col-9" href="https://www.pinterest.com/">
+                    <h3>pinterest</h3>
+                </a> 
+            </li>
+        </ul>
+    </div>
+    <div id="left_icon_list">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a class="nav-link" href="https://www.youtube.com/">
+                    <i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="https://www.facebook.com/">
+                    <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="https://github.com/">
+                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="https://www.google.com/">
+                    <i class="fa fa-chrome fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="https://www.pinterest.com/">
+                    <i class="fa fa-pinterest fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="black_layout" class="position-fixed" 
+    onclick="document.getElementById('black_layout').style.display='none';
+             document.getElementById('left_dropdown').style.transform='translateX(-100%)'"></div>
+    </div>
+    <div id="page_body">        
+        <div>        
+            <img id="apple"src="https://ihealth.bwnet.com.tw/AC_Gallery/2020/04/b201d6bd-475d-8d0b-5308-98525fcf50c2_620.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
